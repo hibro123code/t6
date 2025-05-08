@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#3F51B5"
+        android:gravity="center"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Student List"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- ImageView added here -->
+    <ImageView
+        android:id="@+id/headerImageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/hcmus"
+        android:scaleType="centerCrop"
+        android:contentDescription="Header Image"
+        android:layout_marginBottom="8dp"/>
+
+    <ListView
+        android:id="@+id/androidVersionsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"/>
+</LinearLayout>
